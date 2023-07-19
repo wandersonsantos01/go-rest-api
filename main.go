@@ -12,8 +12,8 @@ const _default_port = "8000"
 func main() {
 
 	models.Cars = []models.Car{
-		{Name: "Fusca", History: "History of fusca"},
-		{Name: "Chevete", History: "History of chevete"},
+		{Id: 1, Name: "Fusca", History: "History of fusca"},
+		{Id: 2, Name: "Chevete", History: "History of chevete"},
 	}
 
 	fmt.Println("Server started on port", "8000")
