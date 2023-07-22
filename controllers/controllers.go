@@ -15,6 +15,7 @@ func Home(w http.ResponseWriter, r *http.Request) {
 }
 
 func AllCars(w http.ResponseWriter, r *http.Request) {
+	// w.Header().Set("Content-type", "application/json")
 	var cars []models.Car
 	database.DB.Find(&cars)
 	json.NewEncoder(w).Encode(cars)
